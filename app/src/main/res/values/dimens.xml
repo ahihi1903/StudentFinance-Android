@@ -1,0 +1,32 @@
+<resources>
+    <dimen
+        name="page_pad">16dp</dimen>
+    <dimen
+        name="card_pad">16dp</dimen>
+    <dimen
+        name="gap">12dp</dimen>
+    <dimen
+        name="small">6dp</dimen>
+    <dimen
+        name="corner">18dp</dimen>
+    <dimen
+        name="stroke">1dp</dimen>
+    <dimen
+        name="touch">48dp</dimen>
+    <dimen
+        name="chart">100dp</dimen>
+    <dimen
+        name="icon">24dp</dimen>
+    <dimen
+        name="hero">32sp</dimen>
+    <dimen
+        name="title">22sp</dimen>
+    <dimen
+        name="section">18sp</dimen>
+    <dimen
+        name="body">15sp</dimen>
+    <dimen
+        name="caption">13sp</dimen>
+    <dimen
+        name="track">8dp</dimen>
+</resources>

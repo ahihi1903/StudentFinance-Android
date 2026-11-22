@@ -1,0 +1,113 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/page_pad">
+        <include
+            layout="@layout/view_month" />
+        <com.google.android.material.card.MaterialCardView
+            style="@style/SF.Card"
+            app:cardBackgroundColor="@color/teal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_pad">
+                <TextView
+                    style="@style/SF.Light"
+                    android:text="@string/balance" />
+                <TextView
+                    android:id="@+id/balanceValue"
+                    style="@style/SF.Hero" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            style="@style/SF.Card">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_pad">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <TextView
+                            style="@style/SF.Caption"
+                            android:text="@string/income" />
+                        <TextView
+                            android:id="@+id/incomeValue"
+                            style="@style/SF.Title" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <TextView
+                            style="@style/SF.Caption"
+                            android:text="@string/expense" />
+                        <TextView
+                            android:id="@+id/expenseValue"
+                            style="@style/SF.Title" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView style="@style/SF.Caption" android:text="@string/received" />
+                <TextView style="@style/SF.Title" android:id="@+id/drawValue" />
+                <TextView style="@style/SF.Caption" android:text="@string/net_month" />
+                <TextView style="@style/SF.Title" android:id="@+id/netValue" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            style="@style/SF.Card">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_pad">
+                <TextView
+                    style="@style/SF.Title"
+                    android:text="@string/breakdown" />
+                <vn.studentfinance.ui.SpendingChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/chart"
+                    android:importantForAccessibility="no" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/legend"></LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            style="@style/SF.Card">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_pad">
+                <TextView
+                    style="@style/SF.Title"
+                    android:text="@string/recent" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/rows"></LinearLayout>
+                <include
+                    layout="@layout/view_state" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

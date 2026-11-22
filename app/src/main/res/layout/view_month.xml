@@ -1,0 +1,30 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="@dimen/gap">
+    <ImageButton
+        android:id="@+id/prev"
+        android:layout_width="@dimen/touch"
+        android:layout_height="@dimen/touch"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_media_previous"
+        android:tint="@color/teal"
+        android:contentDescription="@string/previous" />
+    <TextView
+        android:id="@+id/period"
+        style="@style/SF.Title"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center" />
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="@dimen/touch"
+        android:layout_height="@dimen/touch"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_media_next"
+        android:tint="@color/teal"
+        android:contentDescription="@string/next" />
+</LinearLayout>

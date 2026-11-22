@@ -1,0 +1,6 @@
+
+vn.studentfinance.ReportDeviceTest:.
+
+Time: 1.021
+
+OK (1 test)

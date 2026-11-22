@@ -1,0 +1,23 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="@dimen/gap">
+    <TextView
+        android:id="@+id/name"
+        style="@style/SF.Title" />
+    <TextView
+        android:id="@+id/detail"
+        style="@style/SF.Caption" />
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:trackThickness="@dimen/track"
+        app:trackCornerRadius="@dimen/small"
+        app:trackColor="@color/line" />
+    <TextView android:id="@+id/remaining" style="@style/SF.Caption" />
+    <include layout="@layout/record_actions" />
+</LinearLayout>

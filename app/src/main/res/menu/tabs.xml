@@ -1,0 +1,24 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/tab_dashboard"
+        android:title="@string/dashboard"
+        android:icon="@drawable/ic_dashboard" />
+    <item
+        android:id="@+id/tab_ledger"
+        android:title="@string/ledger"
+        android:icon="@drawable/ic_ledger" />
+    <item
+        android:id="@+id/tab_loans"
+        android:title="@string/loans"
+        android:icon="@drawable/ic_loans" />
+    <item
+        android:id="@+id/tab_budget"
+        android:title="@string/budget"
+        android:icon="@drawable/ic_budget" />
+    <item
+        android:id="@+id/tab_reports"
+        android:title="@string/reports"
+        android:icon="@drawable/ic_reports" />
+</menu>

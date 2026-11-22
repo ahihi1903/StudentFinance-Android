@@ -1,0 +1,174 @@
+<resources>
+    <string
+        name="app_name">StudentFinance</string>
+    <string
+        name="dashboard">Tổng quan</string>
+    <string
+        name="ledger">Giao dịch</string>
+    <string
+        name="loans">Vốn vay</string>
+    <string
+        name="budget">Ngân sách</string>
+    <string
+        name="reports">Giải trình</string>
+    <string
+        name="hello">Sổ tài chính</string>
+    <string
+        name="balance">Vốn vay còn lại</string>
+    <string
+        name="income">Thu cá nhân</string>
+    <string
+        name="expense">Chi trong tháng</string>
+    <string
+        name="breakdown">Cơ cấu chi tiêu</string>
+    <string
+        name="recent">Giao dịch gần đây</string>
+    <string
+        name="history">Sổ giao dịch</string>
+    <string
+        name="new_entry">Thêm giao dịch</string>
+    <string
+        name="edit_entry">Sửa giao dịch</string>
+    <string
+        name="new_loan">Thêm khoản vay</string>
+    <string
+        name="loan_list">Các khoản vay</string>
+    <string
+        name="budget_list">Hạn mức theo danh mục</string>
+    <string
+        name="budget_used">Mức sử dụng ngân sách</string>
+    <string
+        name="report_summary">Tình hình sử dụng vốn</string>
+    <string
+        name="report_rows">Chi tiết khoản chi</string>
+    <string
+        name="empty_chart">Chưa có khoản chi trong tháng</string>
+    <string
+        name="empty_ledger">Chưa có giao dịch</string>
+    <string
+        name="empty_loans">Chưa có khoản vay</string>
+    <string
+        name="empty_budget">Chưa có hạn mức trong tháng</string>
+    <string
+        name="empty_reports">Thêm khoản vay để xem giải trình</string>
+    <string
+        name="kind">Loại giao dịch</string>
+    <string
+        name="amount">Số tiền (đ)</string>
+    <string
+        name="category">Danh mục</string>
+    <string
+        name="source">Nguồn tiền</string>
+    <string
+        name="date">Ngày giao dịch</string>
+    <string
+        name="note">Ghi chú</string>
+    <string
+        name="loan_name">Tên khoản vay</string>
+    <string
+        name="limit">Hạn mức (đ)</string>
+    <string
+        name="save">Lưu</string>
+    <string
+        name="cancel">Hủy</string>
+    <string
+        name="delete">Xóa</string>
+    <string
+        name="edit">Sửa</string>
+    <string
+        name="confirm">Xóa giao dịch này?</string>
+    <string
+        name="confirm_msg">Khoản này sẽ được gỡ khỏi sổ giao dịch.</string>
+    <string
+        name="required">Vui lòng nhập trường này</string>
+    <string
+        name="positive">Nhập số nguyên dương theo đồng</string>
+    <string
+        name="retry">Thử lại</string>
+    <string
+        name="loading">Đang tải dữ liệu…</string>
+    <string
+        name="error">Không thể tải dữ liệu.</string>
+    <string
+        name="individual">Tiền cá nhân</string>
+    <string
+        name="expense_kind">Khoản chi</string>
+    <string
+        name="income_kind">Khoản thu</string>
+    <string
+        name="study">Học tập</string>
+    <string
+        name="living">Sinh hoạt</string>
+    <string
+        name="food">Ăn uống</string>
+    <string
+        name="travel">Đi lại</string>
+    <string
+        name="allowance">Trợ cấp</string>
+    <string
+        name="other">Khác</string>
+    <string
+        name="money">%1$s đ</string>
+    <string
+        name="signed_income">+%1$s</string>
+    <string
+        name="signed_expense">−%1$s</string>
+    <string
+        name="row_detail">%1$s · %2$s</string>
+    <string
+        name="month">Tháng %1$s</string>
+    <string
+        name="previous">Tháng trước</string>
+    <string
+        name="next">Tháng sau</string>
+    <string
+        name="loan_limit">Hạn mức · %1$s</string>
+    <string
+        name="no_draw">Chưa có đợt giải ngân</string>
+    <string
+        name="opening">Tồn đầu kỳ</string>
+    <string
+        name="received">Giải ngân trong kỳ</string>
+    <string
+        name="spent">Chi từ vốn vay</string>
+    <string
+        name="closing">Tồn cuối kỳ</string>
+    <string
+        name="no_loan_expense">Chưa có chi từ vốn vay trong tháng</string>
+    <string
+        name="budget_empty_value">Chưa đặt hạn mức</string>
+    <string
+        name="percent">%1$d%%</string>
+    <string
+        name="chart_label">%1$s · %2$s</string>
+    <string
+        name="choose_loan">Khoản vay</string>
+    <string
+        name="budget_details">%1$s / %2$s</string>
+    <string
+        name="delete_named">Xóa %1$s</string>
+    <string
+        name="edit_named">Sửa %1$s</string>
+    <string name="choose_source">Chọn nguồn tiền</string>
+    <string name="new_draw">Thêm đợt giải ngân</string>
+    <string name="draw_name">Tên đợt giải ngân</string>
+    <string name="new_budget">Thêm ngân sách</string>
+    <string name="edit_loan">Sửa khoản vay</string>
+    <string name="edit_draw">Sửa đợt giải ngân</string>
+    <string name="edit_budget">Sửa ngân sách</string>
+    <string name="confirm_record">Xác nhận xóa bản ghi?</string>
+    <string name="remaining_capital">Vốn chưa sử dụng · %1$s</string>
+    <string name="budget_left">Còn lại · %1$s</string>
+    <string name="budget_over">Vượt ngân sách · %1$s</string>
+    <string name="net_month">Chênh lệch tháng</string>
+    <string name="choose_receipt">Chọn chứng từ (ảnh hoặc PDF)</string>
+    <string name="receipt_error">Không đọc được thông tin chứng từ.</string>
+    <string name="report_author">Họ tên người lập</string>
+    <string name="report_lender">Đơn vị cho vay</string>
+    <string name="export_pdf">Xuất PDF</string>
+    <string name="export_csv">Xuất CSV</string>
+    <string name="report_lines">Chi tiết phát sinh</string>
+    <string name="report_empty">Không có phát sinh trong tháng.</string>
+    <string name="export_saved">Đã lưu báo cáo.</string>
+    <string name="export_failed">Không thể lưu báo cáo. Vui lòng thử lại.</string>
+</resources>

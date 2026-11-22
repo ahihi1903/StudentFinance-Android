@@ -1,0 +1,71 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/page_pad">
+        <include
+            layout="@layout/view_month" />
+        <com.google.android.material.card.MaterialCardView
+            style="@style/SF.Card">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_pad">
+                <TextView
+                    style="@style/SF.Caption"
+                    android:text="@string/choose_loan" />
+                <Spinner
+                    android:id="@+id/selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/touch"
+                    android:contentDescription="@string/choose_loan" />
+                <EditText android:id="@+id/author" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:singleLine="true"
+                    android:inputType="textPersonName" android:hint="@string/report_author" />
+                <EditText android:id="@+id/lender" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:singleLine="true"
+                    android:inputType="textCapWords" android:hint="@string/report_lender" />
+                <TextView android:id="@+id/disclosure" style="@style/SF.Caption" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@+id/exportPdf" android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="@string/export_pdf" />
+                    <Button android:id="@+id/exportCsv" android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="@string/export_csv" />
+                </LinearLayout>
+                <TextView style="@style/SF.Title" android:text="@string/report_summary" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/summary"></LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            style="@style/SF.Card">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_pad">
+                <TextView
+                    style="@style/SF.Title"
+                    android:text="@string/report_lines" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/rows"></LinearLayout>
+                <include
+                    layout="@layout/view_state" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

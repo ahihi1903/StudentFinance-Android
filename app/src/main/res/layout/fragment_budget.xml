@@ -1,0 +1,57 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/page_pad">
+        <include
+            layout="@layout/view_month" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/create" style="@style/SF.Button" android:text="@string/new_budget" />
+        <com.google.android.material.card.MaterialCardView
+            style="@style/SF.Card">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_pad">
+                <TextView
+                    style="@style/SF.Title"
+                    android:text="@string/budget_used" />
+                <TextView
+                    android:id="@+id/overall"
+                    style="@style/SF.Caption" />
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:trackThickness="@dimen/track"
+                    app:trackCornerRadius="@dimen/small"
+                    app:trackColor="@color/line" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            style="@style/SF.Card">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_pad">
+                <TextView
+                    style="@style/SF.Title"
+                    android:text="@string/budget_list" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/rows"></LinearLayout>
+                <include
+                    layout="@layout/view_state" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

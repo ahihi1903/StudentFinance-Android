@@ -1,0 +1,26 @@
+<resources>
+    <color
+        name="teal">#006C65</color>
+    <color
+        name="deep">#004D49</color>
+    <color
+        name="tint">#DBF3EE</color>
+    <color
+        name="bg">#F4F8F7</color>
+    <color
+        name="white">#FFFFFF</color>
+    <color
+        name="ink">#102F30</color>
+    <color
+        name="muted">#476462</color>
+    <color
+        name="line">#D6E5E1</color>
+    <color
+        name="red">#AE3936</color>
+    <color
+        name="sky">#3977B2</color>
+    <color
+        name="ochre">#A56825</color>
+    <color
+        name="violet">#8064A3</color>
+</resources>

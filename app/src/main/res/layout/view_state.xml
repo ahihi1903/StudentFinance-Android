@@ -1,0 +1,22 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/state"
+    android:gravity="center"
+    android:padding="@dimen/gap">
+    <ProgressBar
+        android:id="@+id/spinner"
+        android:layout_width="@dimen/touch"
+        android:layout_height="@dimen/touch"
+        android:contentDescription="@string/loading" />
+    <TextView
+        android:id="@+id/message"
+        style="@style/SF.Caption" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/retry"
+        style="@style/SF.Button"
+        android:text="@string/retry" />
+</LinearLayout>

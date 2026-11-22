@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editorRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/deep">
+
+    <TextView
+        android:id="@+id/editorTitle"
+        style="@style/SF.Header"
+        android:background="@color/deep"
+        android:padding="@dimen/page_pad" />
+
+    <FrameLayout
+        android:id="@+id/fields"
+        android:background="@color/bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/page_pad"
+        android:background="@color/white"
+        android:gravity="end|center_vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@android:id/button2"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@android:id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save" />
+    </LinearLayout>
+</LinearLayout>
